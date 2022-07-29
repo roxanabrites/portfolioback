@@ -29,7 +29,7 @@ public class AuthApi {
     AuthenticationManager authManager;
 @Autowired
     JwtTokenUtil jwtTokenUtil;
-@CrossOrigin(origins={"https://gervasoni-portfolio.web.app" , "http://localhost:4200"})
+@CrossOrigin(origins={"https://portfolio-6e979.web.app" , "http://localhost:4200"})
 @PostMapping("/api/login")
     public ResponseEntity<?> login(@RequestBody @Valid AuthRequest request){
         try{
